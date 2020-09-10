@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "EdConnect Admin",
+    "slug": "EdConnectAdmin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/logo.png",
+    "splash": {
+      "image": "./app/assets/welcome.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.edjustice.edconnect",
+      "versionCode": 1,
+      "enableDangerousExperimentalLeanBuilds": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "05eb9fbe37cda4dcb14f65c7d707db0b"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
